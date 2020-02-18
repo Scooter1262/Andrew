@@ -3,17 +3,27 @@ package main.home1;
 import main.home1.Instrument;
 
 public class Ukulle extends Instrument {
-   public  void name(){
-      name = "Укулле";
+   public Ukulle(String name, String sound, String desc, String history) {
+      super(name, sound, desc, history);
+   }
+   @Override
+   public void setName(String name) { setName("Ukylle"); }
+
+   @Override
+   public void setSound(String sound) {
+      super.setSound("ыптыапты");
    }
 
-   public void sound() {
-      sound = " хз-хз";
+   @Override
+   public void setDesc(String desc) {
+      super.setDesc("Фигня похожая на фигню");
    }
-   public  void  desc(){
-      desc = "Даже не знаю что это";
+
+   @Override
+   public void setHistory(String history) {
+      super.setHistory("В каком то году была создана");
    }
-   public  void history(){
-      history = "В каком - то году была создана";
-   }
+
+
+
 }

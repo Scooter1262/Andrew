@@ -1,38 +1,57 @@
 package main.home1;
 
+
 public class Instrument {
-    String name;
-    String sound;
-    String desc;
-    String history;
+    private String name;
+    private String sound;
+    private String desc;
+    private String history;
 
+    public Instrument(String name, String sound, String desc, String history) {
+        this.name = name;
+        this.sound = sound;
+        this.desc = desc;
+        this.history = history;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public static void main(String[] args) {
-        Violin violin = new Violin();
-        Trombone trombone = new Trombone();
-        Ukulle ukulle = new Ukulle();
-        Cello cello = new Cello();
-        violin.sound();
-        violin.name();
-        violin.desc();
-        violin.history();
-        trombone.sound();
-        trombone.name();
-        trombone.desc();
-        trombone.history();
-        ukulle.sound();
-        ukulle.name();
-        ukulle.desc();
-        ukulle.history();
-        cello.sound();
-        cello.name();
-        cello.desc();
-        cello.history();
-        System.out.println("Инструмент : " + violin.name + " |издаёт звук:" + violin.sound + "| выглядит: " + violin.desc + "| Её история: " + violin.history);
-        System.out.println("Инструмент : " + trombone.name + " |издаёт звук:" + trombone.sound + "| выглядит: " + trombone.desc + "| Её история: " + trombone.history);
-        System.out.println("Инструмент : " + ukulle.name + " |издаёт звук:" + ukulle.sound + "| выглядит: " + ukulle.desc + "| Её история: " + ukulle.history);
-        System.out.println("Инструмент : " + cello.name + " |издаёт звук:" + cello.sound + "| выглядит: " + cello.desc + "| Её история: " + cello.history);
+    public String getName() {
+        return name;
+    }
+
+    public void setSound(String sound) {
+        this.sound = sound;
+    }
+
+    public String getSound() {
+        return sound;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setHistory(String history) {
+        this.history = history;
+    }
+
+    public String getHistory() {
+        return history;
+    }
+
+    public String InstrumentInfo() {
+        return "это инструмент " + getName() + "его звук " + getSound() + " он выглядит " + getDesc() + " был изобретён " + getHistory();
 
     }
 
 }
+
+
+
+

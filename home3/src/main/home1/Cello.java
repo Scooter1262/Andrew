@@ -1,17 +1,30 @@
 package main.home1;
 
+import main.home1.Instrument;
+
 public class Cello extends Instrument {
-    public  void name(){
-        name = "Виолончель";
+    public Cello(String name, String sound, String desc, String history) {
+        super(name, sound, desc, history);
     }
 
-    public void sound() {
-       sound = " ви-ви";
+    @Override
+    public void setName(String name) { setName("Cello"); }
+
+    @Override
+    public void setSound(String sound) {
+        super.setSound("чтпат");
     }
-    public  void  desc(){
-        desc = "Маленькая штучка ";
+
+    @Override
+    public void setDesc(String desc) {
+        super.setDesc("Хз что это такое");
     }
-    public  void history(){
-        history = "В каком - то году была создана";
+
+    @Override
+    public void setHistory(String history) {
+        super.setHistory("В каком то году была создана");
     }
+
+
+
 }

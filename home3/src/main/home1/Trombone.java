@@ -3,16 +3,26 @@ package main.home1;
 import main.home1.Instrument;
 
 public class Trombone extends Instrument {
-    public  void name(){
-        name = "Тромбон";
+    public Trombone(String name, String sound, String desc, String history) {
+        super(name, sound, desc, history);
     }
-    public void sound() {
-       sound =" Тром- тром";
+    @Override
+    public void setName(String name) { setName("Trombone"); }
+    @Override
+    public void setSound(String sound) {
+        super.setSound("Сырыарпы");
     }
-    public  void  desc(){
-        desc = "Делает громкие звуки";
+
+    @Override
+    public void setDesc(String desc) {
+        super.setDesc("Фигня похожая на большую гитару");
     }
-    public  void history(){
-        history = "В каком - то году была создана";
+
+    @Override
+    public void setHistory(String history) {
+        super.setHistory("В каком то году была создана");
     }
+
+
+
 }
