@@ -1,4 +1,4 @@
-package home1;
+package homeWorc1;
 
 import java.util.Scanner;
 public class hello1 {

@@ -26,10 +26,7 @@ public class Main {
             if(hour>24){
                 System.out.println("Error  ввод от 0 до 24 ");
             }
-        /*while ((hour = scanner.nextInt()) > 24) {
-            System.out.println("Error введите ещё раз:");
 
-        }*/
 
         }
     }

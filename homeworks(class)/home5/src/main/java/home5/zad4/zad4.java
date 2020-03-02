@@ -7,15 +7,15 @@ public class zad4 {
         System.out.println("Введите строку для проверку на полиндром: ");
         Scanner a = new Scanner(System.in);
         String string = a.nextLine();
-        StringBuffer b = new StringBuffer(string);
+        StringBuilder b = new StringBuilder(string);
         String c = b.reverse().toString();
-        string = string.replace(" ","");
-         c = c.replace(" ","");
-        if(a.equals(c)) {
+        string = string.replace(" ", "");
+        c = c.replace(" ", "");
+        if (string.equals(c)) {
             System.out.println("Полиндром");
-            } else {
-                System.out.println("Не полиндром");
-            }
+        } else {
+            System.out.println("Не полиндром");
         }
     }
+}
 
